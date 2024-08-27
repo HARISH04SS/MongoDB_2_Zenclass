@@ -1,0 +1,232 @@
+[{
+  "_id": {
+    "$oid": "66ce12edb154ea1fd53911fe"
+  },
+  "id": 1,
+  "name": "Harish",
+  "email": "Harish@example.com",
+  "codekata_problems_solved": 50,
+  "mentor_id": 1,
+  "tasks": [
+    {
+      "task_id": 1,
+      "status": "submitted",
+      "submission_date": {
+        "$date": "2020-10-18T00:00:00.000Z"
+      }
+    },
+    {
+      "task_id": 2,
+      "status": "not submitted",
+      "submission_date": {
+        "$date": "2020-10-25T00:00:00.000Z"
+      }
+    }
+  ],
+  "attendance": [
+    {
+      "date": {
+        "$date": "2020-10-15T00:00:00.000Z"
+      },
+      "status": "present"
+    },
+    {
+      "date": {
+        "$date": "2020-10-20T00:00:00.000Z"
+      },
+      "status": "absent"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "66ce1357b154ea1fd53911ff"
+  },
+  "id": 2,
+  "name": "kumar",
+  "email": "kumar@example.com",
+  "codekata_problems_solved": 50,
+  "mentor_id": 2,
+  "tasks": [
+    {
+      "task_id": 1,
+      "status": "submitted",
+      "submission_date": {
+        "$date": "2020-10-18T00:00:00.000Z"
+      }
+    },
+    {
+      "task_id": 2,
+      "status": "not submitted",
+      "submission_date": {
+        "$date": "2020-10-25T00:00:00.000Z"
+      }
+    }
+  ],
+  "attendance": [
+    {
+      "date": {
+        "$date": "2020-10-15T00:00:00.000Z"
+      },
+      "status": "present"
+    },
+    {
+      "date": {
+        "$date": "2020-10-20T00:00:00.000Z"
+      },
+      "status": "absent"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "66ce13c7b154ea1fd5391200"
+  },
+  "id": 3,
+  "name": "Bhuvana",
+  "email": "bhuvana@example.com",
+  "codekata_problems_solved": 50,
+  "mentor_id": 1,
+  "tasks": [
+    {
+      "task_id": 1,
+      "status": "submitted",
+      "submission_date": {
+        "$date": "2020-10-18T00:00:00.000Z"
+      }
+    },
+    {
+      "task_id": {
+        "$oid": "64f1f9c5f9c5f9c5f9c5f9e2"
+      },
+      "status": "not submitted",
+      "submission_date": {
+        "$date": "2020-10-25T00:00:00.000Z"
+      }
+    }
+  ],
+  "attendance": [
+    {
+      "date": {
+        "$date": "2020-10-15T00:00:00.000Z"
+      },
+      "status": "present"
+    },
+    {
+      "date": {
+        "$date": "2020-10-20T00:00:00.000Z"
+      },
+      "status": "absent"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "66ce13feb154ea1fd5391201"
+  },
+  "id": 4,
+  "name": "Savithiri",
+  "email": "savithiri@example.com",
+  "codekata_problems_solved": 50,
+  "mentor_id": 2,
+  "tasks": [
+    {
+      "task_id": 1,
+      "status": "submitted",
+      "submission_date": {
+        "$date": "2020-10-18T00:00:00.000Z"
+      }
+    },
+    {
+      "task_id": 2,
+      "status": "not submitted",
+      "submission_date": {
+        "$date": "2020-10-25T00:00:00.000Z"
+      }
+    }
+  ],
+  "attendance": [
+    {
+      "date": {
+        "$date": "2020-10-15T00:00:00.000Z"
+      },
+      "status": "present"
+    },
+    {
+      "date": {
+        "$date": "2020-10-20T00:00:00.000Z"
+      },
+      "status": "absent"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "66ce1444b154ea1fd5391202"
+  },
+  "id": 5,
+  "name": "Monish",
+  "email": "monish@example.com",
+  "codekata_problems_solved": 50,
+  "mentor_id": 1,
+  "tasks": [
+    {
+      "task_id": 1,
+      "status": "submitted",
+      "submission_date": {
+        "$date": "2020-10-19T00:00:00.000Z"
+      }
+    },
+    {
+      "task_id": 2,
+      "status": "not submitted",
+      "submission_date": {
+        "$date": "2020-10-26T00:00:00.000Z"
+      }
+    }
+  ],
+  "attendance": [
+    {
+      "date": {
+        "$date": "2020-10-15T00:00:00.000Z"
+      },
+      "status": "present"
+    },
+    {
+      "date": {
+        "$date": "2020-10-20T00:00:00.000Z"
+      },
+      "status": "absent"
+    }
+  ]
+}]
+
+
+
+
+
+db.users.find({
+  $and: [
+    {
+      "attendance": {
+        $elemMatch: {
+          "status": "absent",
+          "date": {
+            $gte: ISODate("2020-10-15T00:00:00.000Z"),
+            $lte: ISODate("2020-10-31T00:00:00.000Z")
+          }
+        }
+      }
+    },
+    {
+      "tasks": {
+        $elemMatch: {
+          "status": "not submitted",
+          "submission_date": {
+            $gte: ISODate("2020-10-15T00:00:00.000Z"),
+            $lte: ISODate("2020-10-31T00:00:00.000Z")
+          }
+        }
+      }
+    }
+  ]}).count();

@@ -1,0 +1,24 @@
+[{
+  "_id": {
+    "$oid": "66ce19bcb154ea1fd5391216"
+  },
+  "id": 1,
+  "name": "Manoj",
+  "mentee_count": 20
+},
+{
+  "_id": {
+    "$oid": "66ce19bcb154ea1fd5391217"
+  },
+  "id": 2,
+  "name": "Hari",
+  "mentee_count": 10
+},
+{
+  "_id": {
+    "$oid": "66ce19bcb154ea1fd5391218"
+  },
+  "id": 3,
+  "name": "monisha",
+  "mentee_count": 16
+}]

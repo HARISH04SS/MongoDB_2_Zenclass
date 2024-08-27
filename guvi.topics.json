@@ -1,0 +1,50 @@
+[{
+  "_id": {
+    "$oid": "66ce17d6b154ea1fd539120a"
+  },
+  "id": 1,
+  "topic_name": "JavaScript Basics",
+  "date": {
+    "$date": "2020-10-10T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66ce17d6b154ea1fd539120b"
+  },
+  "id": 2,
+  "topic_name": "CSS",
+  "date": {
+    "$date": "2020-10-15T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66ce17d6b154ea1fd539120c"
+  },
+  "id": 3,
+  "topic_name": "React.js",
+  "date": {
+    "$date": "2020-10-20T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66ce17d6b154ea1fd539120d"
+  },
+  "id": 4,
+  "topic_name": "Node.js",
+  "date": {
+    "$date": "2020-10-25T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66ce17d6b154ea1fd539120e"
+  },
+  "id": 5,
+  "topic_name": "express.js",
+  "date": {
+    "$date": "2020-10-30T00:00:00.000Z"
+  }
+}]

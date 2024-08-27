@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "66ce196ab154ea1fd5391214"
+  },
+  "id": 1,
+  "drive_name": "Google Placement Drive",
+  "date": {
+    "$date": "2020-10-20T00:00:00.000Z"
+  },
+  "students_appeared": [
+    {
+      "user_id": 1,
+      "result": "selected"
+    },
+    {
+      "user_id": 2,
+      "result": "not selected"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "66ce196ab154ea1fd5391215"
+  },
+  "id": 2,
+  "drive_name": "Amazon Placement Drive",
+  "date": {
+    "$date": "2020-10-30T00:00:00.000Z"
+  },
+  "students_appeared": [
+    {
+      "user_id": 1,
+      "result": "not selected"
+    },
+    {
+      "user_id": 3,
+      "result": "selected"
+    }
+  ]
+}]

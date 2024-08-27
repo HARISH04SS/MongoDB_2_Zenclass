@@ -1,0 +1,50 @@
+[{
+  "_id": {
+    "$oid": "66ce18a7b154ea1fd539120f"
+  },
+  "id": 1,
+  "task_name": "Build a portfolio website",
+  "date_assigned": {
+    "$date": "2020-10-18T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66ce18a7b154ea1fd5391210"
+  },
+  "id": 2,
+  "task_name": "Todo list",
+  "date_assigned": {
+    "$date": "2020-10-25T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66ce18a7b154ea1fd5391211"
+  },
+  "id": 3,
+  "task_name": "Create a React App",
+  "date_assigned": {
+    "$date": "2020-10-30T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66ce18a7b154ea1fd5391212"
+  },
+  "id": 4,
+  "task_name": "Calculator",
+  "date_assigned": {
+    "$date": "2020-11-01T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66ce18a7b154ea1fd5391213"
+  },
+  "id": 5,
+  "task_name": "Pan application",
+  "date_assigned": {
+    "$date": "2020-11-01T00:00:00.000Z"
+  }
+}]
